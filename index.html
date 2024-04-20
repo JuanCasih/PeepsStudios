@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/402670887e.js" crossorigin="anonymous"></script>
+    <title>Peeps Studios</title>
+    <style>
+        /* Estilos específicos para el navbar */
+        .navbar-custom {
+            background-color: transparent !important; /* Hace que el navbar sea completamente transparente */
+            border: none !important; /* Quita el borde del navbar */
+        }
+        
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #000000; /* Cambia el color del texto del navbar a negro */
+        }
+    </style>
+</head>
+<body class="body">
+    <nav class="navbar navbar-expand-md navbar-light bg-light navbar-custom"> <!-- Cambiado a navbar-expand-md -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../Images/Peeps-Studio-Nav.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#desarrollo">Desarrollo de producto</a></li>
+                            <li><a class="dropdown-item" href="#diseño">Desarrollo de e-commerce</a></li>
+                            <li><a class="dropdown-item" href="#branding">Audiovisual</a></li>
+                            <li><a class="dropdown-item" href="#audiovisual">Desarrollo de 3D</a></li>
+                            <li><a class="dropdown-item" href="#ecommerce">Mayorista</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr class="section-divider">
+    <div class="title">
+        <img src="/Images/Peeps-Studio-web.png" alt="logo">
+    </div>
+    <hr class="section-divider">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="#seccion-producto">
+                    <div id="desarrollo" class="card card1">
+                        <h5>Desarrollo de producto</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#seccion-ecommerce">
+                    <div id="diseño" class="card card2">
+                        <h5>E-commerce</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#seccion-audiovisual">
+                    <div id="ecommerce" class="card card3">
+                        <h5>Audiovisual</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="#seccion-3d">
+                    <div id="audiovisual" class="card card4">
+                        <h5>Desarrollo 3D</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#seccion-mayorista">
+                    <div id="tresde" class="card card5">
+                        <h5>Mayorista</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#nosotros">
+                <div id="branding" class="card card6">
+                    <h5>Sobre Nosotros</h5>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+    <hr class="section-divider">
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="Images/Servicios.mp4" type="video/mp4">
+            Tu navegador no admite el elemento de video.
+          </video>  
+        </div>   
+        
+    <hr class="section-divider">
+    <section class="about" id="about">
+    <div class="row">
+        <div  class="image">
+            <img src="Images/DESAROLLO.png" alt="">
+        </div>
+        <div id="seccion-producto" class="content">
+            <h3>Desarrollo de producto terminado</h3>
+            <p>Somos una empresa de producto terminado ubicada en Córdoba Capital, Argentina. Nos enfocamos en el desarrollo técnico, creativo y productivo de artículos de indumentaria.</p>
+            <p>Nuestro Servicio incluye:</p>
+                
+                <p>- Desarrollo creativo</p>
+                
+                <p>- Selección de moldería/muestra</p>
+                
+                <p>- Desarrollo de moldería/muestra</p>
+                
+                <p>- Corte & Confección</p>
+                
+                <p>- Control de calidad/empaquetado.</p>
+            <a href="https://wa.me/message/IYIADHTFSI4LI1" class="btn">Contacto</a>
+        </div>
+    </div>
+    <hr class="section-divider">
+    <div class="row">
+        <div  class="image">
+            <img src="Images/ECOMMERCE.png" alt="">
+        </div>
+        <div id="seccion-ecommerce" class="content">
+            <h3>Desarrollo de e-commerce</h3>
+            <p>Creamos tu tienda web personalizada para tu marca. Desde el diseño adaptado a la estética y necesidades que presente tu marca, la integración de sistemas de pagos y el sistema de envíos.</p>
+            <p>Te ofrecemos una solución integral para tus clientes, desde el momento que realizan la compra hasta que el pedido llega a la puerta de su casa.</p>
+            <p>Trabajamos:</p>
+                
+                <p>- Tienda nube</p>
+                
+                <p>- Wordpress</p>
+                
+                <p>- HTML, CSS Y JAVASCRIPT</p>
+                
+            <a href="#" class="btn">Contacto</a>
+        </div>
+    </div>
+    <hr class="section-divider">
+    <div class="row">
+        <div  class="image">
+            <video autoplay loop muted>
+                <source src="Images/VIDEO AUDIOVISUAL.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+              </video>            
+        </div>
+        <div id="seccion-audiovisual" class="content">
+            <h3>Contenido audiovisual</h3>
+            <p>La creación de contenido es esencial para el desarrollo de tu marca y actualmente un requisito necesario para crear la identidad de marca y llegar a nuevos clientes.</p>
+            <p>Contamos con un equipo de talentosos creadores donde llevaremos tus ideas a la realidad.</p>
+            <p>Nuestros servicios:</p>
+                
+                <p>- Desarrollo creativo de la idea</p>
+                
+                <p>- Foto producto</p>
+                
+                <p>- Contratación de modelos y shooting</p>
+                
+                <p>- Short comerciales y fashion films</p>
+                
+                <p>- Marketing de influencers de moda</p>
+            <a href="https://wa.me/message/IYIADHTFSI4LI1" class="btn">Contacto</a>
+        </div>
+    </div>
+    <hr class="section-divider">
+    <div class="row">
+        <div  class="image">
+            <video autoplay loop muted>
+                <source src="Images/VIDEO 3D.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+              </video>            
+        </div>
+        <div id="seccion-3d" class="content">
+            <h3>Desarrollo 3D</h3>
+            <p>El modelado 3D es un recurso en tendencia en el mundo de la moda, en este proceso llevaremos tu prenda al mundo tridimensional. </p>
+            <p>Lograremos representar la apariencia y la estructura de la prenda, incluyendo detalles como la forma, el ajuste, los pliegues, las texturas y los patrones.</p>
+            <p>Nuestros servicios incluyen:</p>
+                
+                <p>- Modelado de Prenda</p>
+                
+                <p>- Texturización</p>
+                
+                <p>- Rigging</p>
+                
+                <p>- Iluminación y Renderizado</p>
+                
+                <p>- Dirección Creativa, Revisión y Ajustes</p>
+            <a href="https://wa.me/message/IYIADHTFSI4LI1" class="btn">Contacto</a>
+        </div>
+    </div>
+    <hr class="section-divider">
+    <div class="row">
+        <div  class="image">
+            <img src="Images/MAYORISTA.png" alt="">
+        </div>
+        <div id="seccion-mayorista" class="content">
+            <h3>Vende Peeps en tu local</h3>
+            <p>¿Por qué trabajar con nosotros?</p>
+                
+                <p>- Máxima calidad de producto y terminaciones</p>
+                
+                <p>- Recibirás el producto lavado, planchado, etiquetado y con su respectivo packaging listo para comercializar</p>
+                
+                <p>- Te enviaremos un drive de contenido de los productos que pidas para que publiques en redes</p>
+                
+                <p>- Responsabilidad ante fallas de los productos que recibas</p>
+                
+            <a href="https://www.canva.com/design/DAF_ZFiW1ZQ/FiaXVtQiF-e3wwzc956ubg/view" class="btn">Catálogo</a>
+        </div>
+     </div>
+     <hr class="section-divider">
+     <div  id="seccion-nosotros" class="aboutus">
+        <div  id="nosotros" class="nanojuan">
+            <img class="imgnanojuan" src="Images/WhatsApp Image 2024-04-15 at 12.49.00.jpeg" alt="">
+        </div>
+     </div>
+     
+    </section>
+    <div class="nosotros">
+        <H6 class="titulonosotros">Sobre nosotros</H6>
+        <p class="nosotrostexto">Somos Peeps Custom, una empresa de producto terminado ubicada en Córdoba Capital, Argentina. Nos enfocamos en el desarrollo técnico, creativo y productivo de artículos de indumentaria.</p>
+        <p class="nosotrostexto">Nos esforzamos por crear diseños que cuenten con una actitud moderna para una vida llena de creatividad, mezclando de manera natural la comodidad, el minimalismo y la elegancia en cada diseño. </p>
+        <p class="nosotrostexto">Somos mucho más que simples prendas de vestir, Peeps Custom es una plataforma creativa para aquellos que se sienten diferentes, incomprendidos o espíritus libres, para que puedan expresarse a su manera. Nuestr trabajo buscan inspirar a las nuevas generaciones a seguir su pasión, de la manera que elijan, buscando crear constantemente.</p>
+    </div>
+    <hr class="section-divider">
+    <footer class="footer">
+        <div class="box-container">
+          <div class="box">
+            <figure>
+              <a href="#">
+                <img class="logo-footer" src="/Images/logo.png" alt="logo">
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2 class="texto-footer">© 2023 Peeps Custom Todos los Derechos Reservados.</h2>
+          </div>
+          <div class="box">
+            <div class="red-social">
+              <a href="https://www.instagram.com/peepscustom/" class="fa fa-instagram"></a>
+              <a href="https://wa.me/message/IYIADHTFSI4LI1" class="fa fa-whatsapp"></a>
+              <a href="https://www.youtube.com/watch?v=XsLK5FEBSUs&ab_channel=Peeps" class="fa fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Bootstrap JS (coloqué este script al final para asegurar que se cargue después de todos los elementos de la página) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

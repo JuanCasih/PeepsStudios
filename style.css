@@ -1,0 +1,402 @@
+@font-face{
+    font-family: 'SF';
+    src: url(Fuente/SFPRODISPLAYBOLD.OTF);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face{
+    font-family: 'SF';
+    src: url(Fuente/SFPRODISPLAYREGULAR.OTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 3px;
+    padding: 0;
+}
+/* Fondo Index */
+.body{
+    background-color: #ffffff;
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    display: grid;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 17px 17px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: url(Images/pic-5.png);
+    cursor: pointer;
+}
+
+.card2 {
+    background-image: url(Images/pic-2.png);
+    cursor: pointer;
+}
+
+.card3 {
+    background-image: url(Images/pic-3.png);
+    cursor: pointer;
+}
+
+.card4 {
+    background-image: url(Images/pic-6.png);
+    cursor: pointer;
+}
+
+.card5 {
+    background-image: url(Images/pic-4.png);
+    cursor: pointer;
+}
+
+.card6 {
+    background-image: url(Images/pic-1.png);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    font-size: 20px;
+}
+
+h5 {
+    color: #ffffff;
+    text-shadow: 0 0 5px #999;
+    font-family: 'SF';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+        width: 100%; /* Asegura que las cards ocupen todo el ancho en dispositivos móviles */
+        margin-bottom: 20px; /* Agrega espacio entre las cards en dispositivos móviles */
+    }
+}
+
+.box-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.footer {
+    width: 100%;
+    
+  }
+  
+.logo-footer {
+    width: 50px;
+  }
+  
+  .texto-footer {
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0) !important;
+    font-size: small;
+  }
+  
+  .red-social a {
+    display: inline-block;
+    text-decoration: none !important;
+    color: #000000 !important;
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    margin-right: 10px;
+    transition: all 300ms ease;
+  }
+  @media screen and (max-width: 800px) {
+    .box-container {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+      
+    }
+  }
+
+:focus{
+    outline: 1px solid #000000;
+}
+.btn{
+    background-color: #000000;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #000000;
+}
+@media (max-width:991px) {
+body{
+    padding: 30px;
+}
+.form-content{
+    width: 100%;
+}
+form{
+    width: 100%;
+}
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    font-family: 'SF';
+    src: url(Fuente/SFPRODISPLAYBOLD.OTF);
+}
+.heading span {
+    color:black;
+    text-transform: uppercase;
+}
+.about .row {
+    display: grid; /* Cambiar a display: grid; */
+    grid-template-columns: auto auto; /* Dos columnas con tamaño automático */
+    align-items: start; /* Alinear elementos en la parte superior */
+    grid-gap: 20px; /* Espacio entre las columnas */
+}
+
+.about .row .image {
+    grid-column: 1; /* La imagen en la primera columna */
+    margin: 0; /* Eliminar cualquier margen */
+    padding: 0; /* Eliminar cualquier padding */
+    width: max-content; /* Establecer el ancho máximo al ancho de la imagen */
+}
+
+.about .row .content {
+    grid-column: 2; /* El contenido en la segunda columna */
+    margin: 0; /* Eliminar cualquier margen */
+    margin-top: 20px;
+    font-family: 'SF';
+    src: url(Fuente/SFPRODISPLAYBOLD.OTF);
+}
+
+.about .row .content p {
+    text-align: left; /* Alinear el texto a la izquierda */
+    font-family: 'SF';
+    src: url(Fuente/SFPRODISPLAYBOLD.OTF);
+    font-size: small;
+    color: #000;
+}
+
+.about .row .image img{
+    width: 444px;
+    height: 497px;
+}
+.about .row .content h3{
+    color: #000000;
+    font-family: 'SF';
+    src: url(Fuente/SFPRODISPLAYBOLD.OTF);
+    text-align: left;
+    font-weight: bold;
+}
+.aboutus {
+    width: 100%;
+    height: calc(100vh - 80px); /* Resta el tamaño del footer (80px) de la altura total de la ventana del navegador */
+    position: relative; /* Permite que el posicionamiento absoluto sea relativo al contenedor */
+}
+
+.nanojuan img {
+    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+    top: 0; /* Alinea la imagen en la parte superior del contenedor */
+    left: 0; /* Alinea la imagen en la parte izquierda del contenedor */
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: 100%; /* Hace que la imagen ocupe el 100% del alto del contenedor */
+    z-index: 0; /* Asigna un valor de z-index más bajo a la imagen */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+    padding-right: 12px;
+}
+@media (max-width: 768px) {
+    .nanojuan {
+        max-width: 100%; /* Establecer el ancho máximo del contenedor al 100% del ancho del dispositivo */
+    }
+}
+
+
+
+.imgnanojuan {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajustar la imagen manteniendo la relación de aspecto y adaptándola al contenedor */
+}
+
+
+
+
+/* Estilos adicionales para el contenedor principal */
+.aboutus {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.nosotrostexto{
+    color: #000;
+    text-align: center;
+    padding-top: 0%;
+    font-size: medium;
+
+}
+.titulonosotros{
+    color: #000;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 0%;
+}
+
+/* Estilos para la sección "about" */
+.about {
+    padding: 50px 0;
+}
+
+/* Contenedor de fila */
+.about .row {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flujo a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Media queries para ajustar los estilos en dispositivos móviles */
+@media (max-width: 768px) {
+    /* Cambia la dirección del flujo a fila en dispositivos móviles */
+    .about .row {
+        flex-direction: row;
+    }
+
+    /* Estilos para cada par de elementos de la fila en dispositivos móviles */
+    .about .row:nth-child(even) {
+        flex-direction: row; /* Mantén la dirección de la columna en las filas pares */
+    }
+
+    /* Contenido */
+    .about .content {
+        order: -1; /* Cambia el orden del contenido para que aparezca primero en dispositivos móviles */
+    }
+
+    /* Imagen */
+    .about .image {
+        order: 1; /* Cambia el orden de la imagen para que aparezca después en dispositivos móviles */
+    }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 769px) {
+    /* Cambia la dirección del flujo a fila en pantallas grandes */
+    .about .row {
+        flex-direction: row;
+        justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    }
+
+    /* Contenido */
+    .about .content {
+        flex: 0 0 calc(50% - 10px); /* Ocupa el 50% del ancho del contenedor con un espacio entre ellos */
+        margin-right: 10px; /* Espacio entre el contenido y la imagen */
+    }
+
+    /* Imagen */
+    .about .image {
+        flex: 0 0 calc(50% - 10px); /* Ocupa el 50% del ancho del contenedor con un espacio entre ellos */
+        margin-left: 10px; /* Espacio entre el contenido y la imagen */
+    }
+}
+.section-divider {
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 2px solid #000; /* Establece un borde superior de 2px sólido en color negro */
+    margin: 30px 0; /* Ajusta el margen para espaciar la línea */
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Utilizamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    overflow: hidden;
+    padding: 50px;
+    margin-top: 0px;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
